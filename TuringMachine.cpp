@@ -18,7 +18,7 @@ TuringMachine::TuringMachine(const QStringList &_K,
         Gamma.insert(i[0].toLatin1());
     for(QString i:_Delta)
     {
-        QStringList __Delta=i.split(QRegExp("(\\ )"));
+        QStringList __Delta=i.split(QRegExp("[\\ ]"),QString::SkipEmptyParts);
         Delta.insert(make_pair(
                          make_pair(__Delta[0],__Delta[1][0].toLatin1()),
                          make_tuple(__Delta[2],__Delta[3][0].toLatin1(),
