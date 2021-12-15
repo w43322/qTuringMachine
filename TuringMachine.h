@@ -30,7 +30,6 @@ private:
     QString q0;      //starting status
     char B;          //retaining char
     set<QString>F;   //ending status
-
     QString sta;     //now status
     QString str;     //string
     int pos;         //reader position on string
