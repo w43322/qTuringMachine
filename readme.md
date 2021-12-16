@@ -1,13 +1,3 @@
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-
 # qTuringMachine
 ## 这是一个东北大学2020级计算机学院《计算理论》课的课设。
 ### 1.简介
@@ -21,7 +11,7 @@
 ##### $一进制转二进制.tm$，用来把一进制自然数$a^n$转换成二进制数$\{0,1\}^+$
 ### 2.使用方法
 #### 打开软件后，点击“Browse...”按钮选择一个图灵机预设（后缀为"$.tm$"），之后点击“Load”按钮载入该图灵机。成功后状态应如下图。
-![avatar](./icon.ico)
+![avatar]()
 #### 载入图灵机后，在String后面的输入框中输入想要的字符串，字符串应该会在下面实时更新。
 #### 点击“Auto”按钮或者“Step”按钮来运行图灵机。在Auto状态下，可以用右边的滑块来控制运行速度，用上面的“Stop”按钮来停止自动运行。
 #### 在运行过程中：
