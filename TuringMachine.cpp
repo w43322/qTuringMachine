@@ -66,7 +66,10 @@ int TuringMachine::Step()
         case 'L':--pos;break;
         default:break;
         }
-        return QTM_OK;//success
+        if(F.find(sta)!=F.end())
+            return QTM_FINISHED;//finished
+        else 
+            return QTM_OK;//success
     }
     else
         return QTM_ERROR;//fail
