@@ -43,8 +43,8 @@ public:
                   const QStringList &_F,
                   const QString &_str="",
                   const int &_pos=1);
-    QString Str();
-    QString Sta();
+    const QString &Str();
+    const QString &Sta();
     QString Pointer();
     int Step();
     void Reset(const QString &_str);

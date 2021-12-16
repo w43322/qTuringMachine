@@ -10,13 +10,13 @@ TuringMachine::TuringMachine(const QStringList &_K,
                              const QString &_str,
                              const int &_pos)
 {
-    for(const auto &i:_K)
+    for(const QString &i:_K)
         K.insert(i);
-    for(const auto &i:_Sigma)
+    for(const QString &i:_Sigma)
         Sigma.insert(i[0].toLatin1());
-    for(const auto &i:_Gamma)
+    for(const QString &i:_Gamma)
         Gamma.insert(i[0].toLatin1());
-    for(const auto &i:_Delta)
+    for(const QString &i:_Delta)
     {
         QStringList __Delta=i.split(QRegExp("[\\ ]"),QString::SkipEmptyParts);
         Delta.insert(make_pair(
@@ -27,17 +27,17 @@ TuringMachine::TuringMachine(const QStringList &_K,
     }
     q0=_q0;
     B=_B[0].toLatin1();
-    for(const auto &i:_F)
+    for(const QString &i:_F)
         F.insert(i);
     sta=q0;
     str=B+_str+B;
     pos=_pos;
 }
-QString TuringMachine::Str()
+const QString &TuringMachine::Str()
 {
     return str;
 }
-QString TuringMachine::Sta()
+const QString &TuringMachine::Sta()
 {
     return sta;
 }
