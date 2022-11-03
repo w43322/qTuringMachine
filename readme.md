@@ -12,7 +12,7 @@
 
 *  $n个0 \\_ n个1.tm$ ，接收的语言为  $L(m)= \\{ 0^n1^n \vert \geq1 \\}$
 
-*  $wcw.tm$ ，接收的语言为  $L(m)= \\{ wcw \vert w \in\{a,b\}^+ \\}$
+*  $wcw.tm$ ，接收的语言为  $L(m)= \\{ wcw \vert w \in \\{ a,b \\} ^ + \\}$
 
 *  $log2(n).tm$ ，用来计算自然数  $a^n$ 以2为底的对数  $b^m(m=\log_2n)$
 
